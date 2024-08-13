@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculadora</h2>
+        <div class="display" id="display"></div><br>
+        <div class="buttons">
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="del" onclick="backspace()">DEL</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="appendOperator('+')">+</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="operator" onclick="appendOperator('-')">-</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button class="operator" onclick="appendOperator('/')">÷</button>
+            <button class="operator" onclick="appendOperator('*')">x</button>
+            <button class="clear" onclick="clearDisplay()">RESET</button>
+            <button class="igual" onclick="calculate()">=</button>
+        </div>
+        <br>
+        <h2>Temas</h2><br>
+        <label class="switch">
+          <label class="numero">1</label>
+          <input type="radio" name="switch" value="1" checked>
+          <span class="slider round"></span>
+        </label>
+        <label class="switch">
+          <label class="numero" >2</label>
+          <input type="radio" name="switch" value="2">
+          <span class="slider round"></span>
+        </label>
+        <label class="switch">
+          <label class="numero">3</label>
+          <input type="radio" name="switch" value="3">
+          <span class="slider round"></span>
+        </label>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
